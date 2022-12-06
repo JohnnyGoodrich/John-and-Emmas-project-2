@@ -6,6 +6,8 @@ import Drinks from './Drinks';
 import { Routes, Route } from 'react-router-dom'
 import Mainpage from './components/MainPage';
 import DrinkDetails from './DrinkDetails';
+import Gin from './Gin';
+import Whiskey from './Whiskey';
 
 function App() {
   	
@@ -14,7 +16,9 @@ function App() {
     
       <main>
         <Routes>
-          <Route path="/drinks" element={ <Drinks /> } />
+          <Route path="/vodka" element={ <Drinks /> } />
+          <Route path="/gin" element={ <Gin /> } />
+          <Route path="/whiskey" element={ <Whiskey /> } />
           <Route path="/drinks/:id" element={ <DrinkDetails /> } />
           
         </Routes>
