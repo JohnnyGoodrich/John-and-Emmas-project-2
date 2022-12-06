@@ -24,7 +24,7 @@ function Drinks(){
 return(
   
 <div className="container">
-<h1>Drinks:</h1>
+<h1>Vodka Drinks:</h1>
 
 {drink.drinks.map((drinky, index)=>{
   return(

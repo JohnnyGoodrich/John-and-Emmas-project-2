@@ -15,10 +15,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/drinks" element={ <Drinks /> } />
-          <Route path="/drinks/:url" element={ <DrinkDetails /> } />
+          <Route path="/drinks/:id" element={ <DrinkDetails /> } />
           
         </Routes>
-        <Mainpage/>
+        {/* <Mainpage/> */}
       </main>
       
       
