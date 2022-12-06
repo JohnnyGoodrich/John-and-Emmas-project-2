@@ -12,9 +12,11 @@ function App() {
     
       <main>
         <Routes>
-          <Route path="/details" element={ <Drinks /> } />
+          <Route path="/drinks" element={ <Drinks /> } />
+          
         </Routes>
       </main>
+      
       
 
 )}
