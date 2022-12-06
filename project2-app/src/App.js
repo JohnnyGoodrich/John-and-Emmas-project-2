@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react';
 import {useParams} from 'react-router'
 import Drinks from './Drinks';
 import { Routes, Route } from 'react-router-dom'
+import Mainpage from './components/MainPage';
 
 function App() {
   	
@@ -15,6 +16,7 @@ function App() {
           <Route path="/drinks" element={ <Drinks /> } />
           
         </Routes>
+        <Mainpage/>
       </main>
       
       
