@@ -12,10 +12,6 @@ function App() {
         return(
     
       <main>
-        <Routes>
-          <Route path="/drinks" element={ <Drinks /> } />
-          
-        </Routes>
         <Mainpage/>
       </main>
       
