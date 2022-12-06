@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import {useParams} from 'react-router'
 
 function Drinks(){
-    const id = "b"
-    // console.log(id)
-  const url= "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=scotch"
+
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka`
   const [drink, setDrink]=useState(null)
   useEffect( ()=> {
       fetch(url)
@@ -29,6 +28,7 @@ return(
 
 {drink.drinks.map((drinky, index)=>{
   return(
+    // <Link to={`/details/$${drinky.}`}
     <div className="drinks" key={index}>
       <div className="drinkName">
     <h3>{drinky.strDrink}</h3>
