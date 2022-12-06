@@ -2,17 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router'
-import Drinks from './VodkaDrinks';
+import Drinks from './Drinks';
 import { Routes, Route } from 'react-router-dom'
 import Mainpage from './components/MainPage';
 
 function App() {
-  	return (
-  	 <div>
+  	
+
+        return(
+    
+      <main>
+        <Routes>
+          <Route path="/drinks" element={ <Drinks /> } />
+          
+        </Routes>
         <Mainpage/>
-    </div>
-    )
-     }
-console.log(Mainpage)
+      </main>
+      
+      
+
+)}
+
 
 export default App;
