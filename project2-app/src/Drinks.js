@@ -28,15 +28,16 @@ return(
 
 {drink.drinks.map((drinky, index)=>{
   return(
-    // <Link to={`/details/$${drinky.}`}
-    <div className="drinks" key={index}>
-      <div className="drinkName">
-    <h3>{drinky.strDrink}</h3>
-    </div>
-    <div className="img">
-    <img src={drinky.strDrinkThumb}height="100"/>
-    </div>
-    </div>
+    <Link to={`/drinks/${drinky.idDrink}`}>
+      <div className="drinks" key={index}>
+        <div className="drinkName">
+          <h3>{drinky.strDrink}</h3>
+        </div>
+        <div className="img">
+          <img src={drinky.strDrinkThumb}height="100"/>
+        </div>
+      </div>
+    </Link>
 
   )
 })
