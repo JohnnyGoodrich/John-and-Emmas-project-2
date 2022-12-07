@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router'
@@ -11,10 +10,7 @@ import Whiskey from './components/Whiskey';
 import Rum from './components/Rum';
 
 function App() {
-  	
-
-        return(
-    
+    return(
       <main>
         <Routes>
           <Route path="/" element={ <Mainpage /> } />
@@ -25,10 +21,7 @@ function App() {
           <Route path="/rum" element={ <Rum /> } />
           <Route path="/drinks/:id" element={ <DrinkDetails /> } />
         </Routes>
-      </main>
-      
-      
-)}
-
-
+      </main>    
+    )
+}
 export default App;

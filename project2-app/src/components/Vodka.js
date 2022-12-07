@@ -11,7 +11,7 @@ function Drinks(){
           .then((response)=>response.json())
           .then((json)=> {
               setDrink(json)
-              console.log(drink.drinks)
+              // console.log(drink.drinks)
       })
           .catch(console.error)
 
@@ -28,7 +28,7 @@ return(
 
 {drink.drinks.map((drinky, index)=>{
   return(
-    <Link to={`/drinks/${drinky.idDrink}`}>
+    <Link to={`/drinks/${drinky.idDrink}`}key={index}>
       <div className="drinks" key={index}>
         <div className="drinkName">
           <h3>{drinky.strDrink}</h3>

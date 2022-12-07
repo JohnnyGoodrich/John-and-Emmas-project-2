@@ -11,7 +11,7 @@ function Rum(){
           .then((response)=>response.json())
           .then((json)=> {
               setDrink(json)
-              console.log(drink.drinks)
+            //   console.log(drink.drinks)
       })
           .catch(console.error)
 

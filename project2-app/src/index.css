@@ -45,4 +45,10 @@ code {
 }
 .details-container{
   text-align: center;
+  background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g");
+  background-size:cover;
+  margin:0px;
+  background-repeat: no-repeat;
+  height:100vh;
+  color: white;
 }
