@@ -22,6 +22,9 @@ function DrinkDetails(){
         <div className="details-container">
             <h2>{drinksD.drinks[0].strDrink}</h2>
             <img src={drinksD.drinks[0].strDrinkThumb}height="300"/>
+            <h3>How to make a {drinksD.drinks[0].strDrink}:</h3>
+            <p className='text'>{drinksD.drinks[0].strInstructions}</p>
+
            
 
      

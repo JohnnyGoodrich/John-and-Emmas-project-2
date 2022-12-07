@@ -2,12 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router'
-import Drinks from './Vodka';
+import Drinks from './components/Vodka';
 import { Routes, Route } from 'react-router-dom'
 import Mainpage from './components/MainPage';
-import DrinkDetails from './DrinkDetails';
-import Gin from './Gin';
-import Whiskey from './Whiskey';
+import DrinkDetails from './components/DrinkDetails';
+import Gin from './components/Gin';
+import Whiskey from './components/Whiskey';
+import Rum from './components/Rum';
 
 function App() {
   	
@@ -21,10 +22,9 @@ function App() {
           <Route path="/vodka" element={ <Drinks /> } />
           <Route path="/gin" element={ <Gin /> } />
           <Route path="/whiskey" element={ <Whiskey /> } />
+          <Route path="/rum" element={ <Rum /> } />
           <Route path="/drinks/:id" element={ <DrinkDetails /> } />
-          
         </Routes>
-        {/* <Mainpage/> */}
       </main>
       
       

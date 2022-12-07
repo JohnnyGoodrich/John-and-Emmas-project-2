@@ -8,15 +8,22 @@ function Mainpage(props) {
     
     
       <div>
-        <Link to="/Drinks">
+        <Link to="/vodka">
           <button>Vodka</button>
         </Link>
-      </div>
     
+        <Link to="/rum">
+          <button id="Rum">Rum</button>
+        </Link>
+        
+        <Link to="/whiskey">
+          <button id="Whiskey">Whiskey</button>
+        </Link>
 
-    <button id="Rum">Rum</button>
-    <button id="Whiskey">Whiskey</button>
-    <button id="Gin">Gin</button>
+        <Link to="/gin">
+          <button id="Gin">Gin</button>
+        </Link>
+      </div>
 
     
     
