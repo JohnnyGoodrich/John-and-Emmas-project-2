@@ -28,7 +28,7 @@ return(
 
 {drink.drinks.map((drinky, index)=>{
   return(
-    <Link to={`/drinks/${drinky.idDrink}`}>
+    <Link to={`/drinks/${drinky.idDrink}`} key={index}>
       <div className="drinks" key={index}>
         <div className="drinkName">
           <h3>{drinky.strDrink}</h3>
