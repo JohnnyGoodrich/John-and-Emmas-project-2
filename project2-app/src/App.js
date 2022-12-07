@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react';
 import {useParams} from 'react-router'
-import Drinks from './Drinks';
+import Drinks from './Vodka';
 import { Routes, Route } from 'react-router-dom'
 import Mainpage from './components/MainPage';
 import DrinkDetails from './DrinkDetails';

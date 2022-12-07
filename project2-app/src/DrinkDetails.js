@@ -21,7 +21,7 @@ function DrinkDetails(){
         drinksD ?
         <div className="details-container">
             <h2>{drinksD.drinks[0].strDrink}</h2>
-            <img src={drinksD.drinks[0].strDrinkThumb}height="100"/>
+            <img src={drinksD.drinks[0].strDrinkThumb}height="300"/>
            
 
      
