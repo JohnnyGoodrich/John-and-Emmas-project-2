@@ -12,16 +12,13 @@ code {
     monospace;
 }
 .container {
-
   display: grid;
-
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: minmax(10px, 50px);
   grid-gap: 1rem;
   margin: 0 auto;
   max-width: 1200px;
   padding: 1rem;
-
   grid-auto-rows: auto;
 }
 
@@ -45,10 +42,66 @@ code {
 }
 .details-container{
   text-align: center;
-  background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g");
-  background-size:cover;
+  /* background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g"); */
+  background-size:100% 100vh;
   margin:0px;
   background-repeat: no-repeat;
   height:100vh;
+  /* color: white; */
+  /* display: flex; */
+}
+.ingredients{
+  text-align: center;
+  padding: 0;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+}
+.ingredientsHead{
+  /* padding-top: 100px; */
+  text-align: center;
+}
+.drink-ing {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 4em;
+ 
+}
+.drink-title-pic{
+  padding-left: 100px;
+  padding-top: 40px;
+  /* font-family: 'Caveat', cursive; */
+  
+}
+.ingredgients-body{
+  padding-top: 50px;
+  padding-right: 100px;
+  
+
+}
+.instructions{
+  /* display:flex; */
+  text-align: center;
+  padding-top: 10px;
+  /* width: 600px; */
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  
+}
+.header{
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
   color: white;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  padding-left: 50px;
+  margin:0;
+}
+.header-image{
+  padding-left: 50px;
+  padding-top: 10px;
+  margin: 0px;
+}
+.btns{
+  padding-top: 50px;
 }
