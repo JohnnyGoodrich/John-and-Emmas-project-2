@@ -16,6 +16,8 @@ function App() {
     
       <main>
         <Routes>
+          <Route path="/" element={ <Mainpage /> } />
+          <Route path="/test" element={ <Mainpage /> } />
           <Route path="/vodka" element={ <Drinks /> } />
           <Route path="/gin" element={ <Gin /> } />
           <Route path="/whiskey" element={ <Whiskey /> } />
@@ -26,7 +28,6 @@ function App() {
       </main>
       
       
-
 )}
 
 
