@@ -2,33 +2,41 @@ import { Link } from "react-router-dom";
 
 
 function Mainpage(props) {
-    return<>
-    <h1 id="appname">Clink</h1>
-    <img id="Mainimg" src={"https://i.pinimg.com/564x/f3/56/04/f356048cad4abaedad5000a7e2b39a92--outdoor-patio-string-lights-outdoor-patios.jpg"} alt="logo"/>
+    return<div className="div1">
+   
+   <div className="div2">
+    <h1>Clink</h1>
+    </div>
     
-    
-      <div>
+    <div className="buttons">
+      <div className="div3">
         <Link to="/vodka">
           <button>Vodka</button>
         </Link>
-    
-        <Link to="/rum">
-          <button id="Rum">Rum</button>
-        </Link>
-        
-        <Link to="/whiskey">
-          <button id="Whiskey">Whiskey</button>
-        </Link>
-
-        <Link to="/gin">
-          <button id="Gin">Gin</button>
-        </Link>
       </div>
-
+    
+        <div className="div4">
+        <Link to="/rum">
+          <button>Rum</button>
+        </Link>
+        </div>
+       
+        <div className="div5">
+        <Link to="/whiskey">
+          <button>Whiskey</button>
+        </Link>
+        </div>
+        
+        <div className="div6">
+        <Link to="/gin">
+          <button>Gin</button>
+        </Link>
+        </div>
+</div>
     
     
     
-    </>
+    </div>
     
 }
 export default Mainpage;
