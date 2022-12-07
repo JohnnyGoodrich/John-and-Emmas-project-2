@@ -14,15 +14,15 @@ function App() {
     
       <main>
         <Routes>
+          <Route path="/" element={ <Mainpage /> } />
           <Route path="/drinks" element={ <Drinks /> } />
           <Route path="/drinks/:url" element={ <DrinkDetails /> } />
-          
+          <Route path="/test" element={ <Mainpage /> } />
         </Routes>
-        <Mainpage/>
+      
       </main>
       
       
-
 )}
 
 

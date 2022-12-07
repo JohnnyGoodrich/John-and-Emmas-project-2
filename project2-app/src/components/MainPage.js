@@ -1,4 +1,5 @@
-import React from "react";
+import { Link } from "react-router-dom";
+
 
 function Mainpage(props) {
     return<>
@@ -7,18 +8,9 @@ function Mainpage(props) {
     
     
       <div>
-        {/* 👇️ react router link */}
-        <Link to="/about">
+        <Link to="/Drinks">
           <button>Vodka</button>
         </Link>
-
-        <br />
-        <br />
-
-        {/* 👇️ Anchor link */}
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <button>Click</button>
-        </a>
       </div>
     
 
