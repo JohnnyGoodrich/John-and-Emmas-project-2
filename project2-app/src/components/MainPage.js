@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Mainpage(props) {
     return(<div className="div1">
    <div className="div2">
-    <h1>Clink</h1>
+    {/* <h1>Clink</h1> */}
     </div>
     
     <div className="buttons">

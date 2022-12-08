@@ -4,7 +4,7 @@ import {useParams} from 'react-router'
 
 function Drinks(){
 
-  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka`
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=scotch`
   const [drink, setDrink]=useState(null)
   useEffect( ()=> {
       fetch(url)
@@ -22,7 +22,7 @@ function Drinks(){
   }else{
 
 return(
-  
+  <html>
 <div className="container">
 <h1>Vodka Drinks:</h1>
 
@@ -43,5 +43,6 @@ return(
 })
 }
 </div>
+</html>
 )}}
 export default Drinks
