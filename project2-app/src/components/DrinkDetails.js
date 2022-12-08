@@ -26,7 +26,7 @@ function DrinkDetails(){
             <section className='drink-ing'>
                 <div className='drink-title-pic'>
                     <h2>{drinksD.drinks[0].strDrink}</h2>
-                    <img src={drinksD.drinks[0].strDrinkThumb}height="270"/>
+                    <img className='details-image' src={drinksD.drinks[0].strDrinkThumb}height="270"/>
                 </div>
                 <div className='ingredgients-body'>
                     <ul className='ingredients'>
