@@ -22,14 +22,15 @@ function DrinkDetails(){
     return (
         drinksD ?
         <div className="details-container">
+            <div className='all'>
             <section className='drink-ing'>
                 <div className='drink-title-pic'>
                     <h2>{drinksD.drinks[0].strDrink}</h2>
-                    <img src={drinksD.drinks[0].strDrinkThumb}height="300"/>
+                    <img src={drinksD.drinks[0].strDrinkThumb}height="270"/>
                 </div>
                 <div className='ingredgients-body'>
-                    <h3 className='ingredientsHead'>Ingredients:</h3>
                     <ul className='ingredients'>
+                    <h3 className='ingredientsHead'>Ingredients:</h3>
                         <p>{drinksD.drinks[0].strMeasure1}  {drinksD.drinks[0].strIngredient1}</p>  
                         <p>{drinksD.drinks[0].strMeasure2} {drinksD.drinks[0].strIngredient2}</p>  
                         <p>{drinksD.drinks[0].strMeasure3} {drinksD.drinks[0].strIngredient3}</p>  
@@ -43,10 +44,13 @@ function DrinkDetails(){
                     </ul>
                 </div>
             </section>
-            <div className='instructions'>    
+            <div className='instructions-body'>    
+                <div className='instructions'>
                 <h3>How to make a {drinksD.drinks[0].strDrink}:</h3>
                 <p className='text'>{drinksD.drinks[0].strInstructions}</p>
+                </div>
             </div>    
+            </div>
             <div className='btns'>
                 <Link to="/vodka">
                 <button>Vodka</button>
@@ -64,11 +68,6 @@ function DrinkDetails(){
                 <button id="home">Home</button>
                 </Link>
       </div>
-
-           
-
-     
-          
         </div> :<p>Loading...</p>
       );
       

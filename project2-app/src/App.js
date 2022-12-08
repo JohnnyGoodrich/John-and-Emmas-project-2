@@ -13,9 +13,9 @@ function App() {
     return(
       
       <main>
-        <header className='header'>
-          <a href="/">Clink!<img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="90"></img></a>
-      </header>
+        <h1 className='header'>
+          <a className='clink' href="/">Clink!<img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img></a>
+        </h1>
         <Routes>
           <Route path="/" element={ <Mainpage /> } />
           <Route path="/test" element={ <Mainpage /> } />

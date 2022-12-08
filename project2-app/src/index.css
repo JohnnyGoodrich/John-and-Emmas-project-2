@@ -12,6 +12,10 @@ code {
     monospace;
 }
 .container {
+  background-color: pink;
+  font-family: 'Caveat', cursive;
+  font-size: x-large;
+  color: navy;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: minmax(10px, 50px);
@@ -23,6 +27,7 @@ code {
 }
 
 .drinks{
+  background-color: aliceblue;
   border: 1px solid lightgray;
   border-radius: 1rem;
   display: grid;
@@ -42,50 +47,62 @@ code {
 }
 .details-container{
   text-align: center;
+  background-color:lightcyan;
   /* background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g"); */
   background-size:100% 100vh;
   margin:0px;
   background-repeat: no-repeat;
   height:100vh;
+  min-width: 840px;
   /* color: white; */
   /* display: flex; */
 }
 .ingredients{
+  background-color: aliceblue;
+  /* font-weight: bold; */
   text-align: center;
   padding: 0;
   border: 1px solid lightgray;
   border-radius: 1rem;
 }
-.ingredientsHead{
-  /* padding-top: 100px; */
+.ingredientsHead {
+  font-family: 'Roboto Slab', serif;
+  font-size: large;
   text-align: center;
 }
 .drink-ing {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-column-gap: 4em;
+  grid-column-gap: 5%;
  
 }
 .drink-title-pic{
-  padding-left: 100px;
+  font-family: 'Lobster', cursive;
+  color: navy;
+  font-size: larger;
+  padding-left: 30%;
   padding-top: 40px;
   /* font-family: 'Caveat', cursive; */
   
 }
 .ingredgients-body{
-  padding-top: 50px;
-  padding-right: 100px;
+  padding-top: 100px;
+  padding-right: 20%;
   
 
 }
 .instructions{
-  /* display:flex; */
+  background-color: aliceblue;
+  display:grid;
   text-align: center;
-  padding-top: 10px;
+  position:relative;
   /* width: 600px; */
   border: 1px solid lightgray;
   border-radius: 1rem;
-  
+  /* padding-right:2rem; */
+}
+.instructions-body{
+  padding: 50px 7% 0 12%;
 }
 .header{
   display: flex;
@@ -104,4 +121,12 @@ code {
 }
 .btns{
   padding-top: 50px;
+}
+.all {
+  display: grid;
+
+}
+a {
+  text-decoration: none;
+  color: navy;
 }
