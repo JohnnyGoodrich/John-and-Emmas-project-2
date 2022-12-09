@@ -1,6 +1,6 @@
 
 html{
-  background-color: pink;
+  background-color: lightcyan;
 }
 .title-container{
   text-align: center;
@@ -36,7 +36,7 @@ code {
     monospace;
 }
 .container {
-  background-color: pink;
+  background-color:lightcyan;
   font-family: 'Caveat', cursive;
   font-size: x-large;
   color: navy;
@@ -121,11 +121,11 @@ code {
   flex-direction: column;
   text-align: center;
   position:relative;
-  /* width: 600px; */
   border: 1px solid lightgray;
   border-radius: 1rem;
-  /* padding-right:2rem; */
-  
+}
+.text{
+  padding:0 20px 0 20px;
 }
 .instructions-body{
   /* display: flex;
@@ -167,6 +167,9 @@ a {
   text-decoration: none;
   color: navy;
 }
+.clink{
+
+}
 .drink-head{
   font-size: x-large;
   display: flex;
@@ -197,6 +200,7 @@ a {
   }
   .clink{
     font-size: xx-large;
+    
   }
   .drink-link-head{
     font-size: large;
