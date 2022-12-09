@@ -1,42 +1,33 @@
 import { Link } from "react-router-dom";
+import Slider from "./Slider";
 
 
 function Mainpage(props) {
     return<div className="div1">
-   
-   <div className="div2">
-    <h1>Clink</h1>
-    </div>
-    
-    <div className="buttons">
-      <div className="div3">
+      <Slider/>
+
+
+
+   <div className="button">
         <Link to="/vodka">
           <button>Vodka</button>
         </Link>
-      </div>
-    
-        <div className="div4">
+
         <Link to="/rum">
-          <button>Rum</button>
+          <button id="rum">Rum</button>
         </Link>
-        </div>
-       
-        <div className="div5">
+
         <Link to="/whiskey">
           <button>Whiskey</button>
         </Link>
-        </div>
-        
-        <div className="div6">
+
         <Link to="/gin">
           <button>Gin</button>
         </Link>
         </div>
+       
 </div>
     
-    
-    
-    </div>
     
 }
 export default Mainpage;
