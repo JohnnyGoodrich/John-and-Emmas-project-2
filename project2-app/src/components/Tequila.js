@@ -2,9 +2,9 @@ import {useState, useEffect} from "react"
 import { Link } from 'react-router-dom'
 import {useParams} from 'react-router'
 
-function Whiskey(){
+function Tequila(){
 
-  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=bourbon`
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila`
   const [drink, setDrink]=useState(null)
   useEffect( ()=> {
       fetch(url)
@@ -38,7 +38,8 @@ return(
         </h1>
   
 <div className="container">
-<h1>Whiskey Drinks:</h1>
+  
+<h1>Tequila Drinks:</h1>
 
 {drink.drinks.map((drinky, index)=>{
   return(
@@ -59,4 +60,4 @@ return(
 </div>
 </html>
 )}}
-export default Whiskey
+export default Tequila

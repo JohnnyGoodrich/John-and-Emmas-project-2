@@ -31,7 +31,8 @@ function DrinkDetails(){
           <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
           <Link to="/rum" className='drink-link-head'>Rum | </Link>
           <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
-          <Link to="/gin" className='drink-link-head'>Gin </Link>
+          <Link to="/gin" className='drink-link-head'>Gin | </Link>
+          <Link to="/tequila" className='drink-link-head'>Tequila </Link>
           </div>
         </div>
         </h1>

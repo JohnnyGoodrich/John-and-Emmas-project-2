@@ -33,6 +33,11 @@ function Mainpage(props) {
           <button>Gin</button>
         </Link>
         </div>
+        <div className="div6">
+        <Link to="/tequila">
+          <button>Tequila</button>
+        </Link>
+        </div>
 </div>
     </div>
     )
