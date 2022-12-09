@@ -3,48 +3,33 @@ import Slider from "./Slider";
 
 
 function Mainpage(props) {
-  return  <div>
+  return  (
+  <div className="mainpage">
    
     <div className="button">
       <div className="div1">
         <div className="div2">
         </div>
+        {/* <Slider /> */}
+    </div>
         <div className="title-container">
           <div className="title-page-img">Clink!</div>
         </div>
-        <Slider />
-        <div className="buttons">
-          <div className="div3">
-
-
-            <Link to="/vodka">
-              <button>Vodka</button>
-            </Link>
-
-            <Link to="/rum">
-              <button id="rum">Rum</button>
-            </Link>
-
-            <Link to="/whiskey">
-              <button>Whiskey</button>
-            </Link>
-
-            <Link to="/gin">
-              <button>Gin</button>
-            </Link>
-          </div>
-
-        </div>
-
-
-        <div className="div6">
-          <Link to="/tequila">
-            <button>Tequila</button>
-          </Link>
-        </div>
-      </div>
-    </div>
   </div>
-    
+      <div className="mp-header-container">
+        <h1 className='mp-header'>
+          <div className='mp-header-content'>
+            <div className='mp-drink-head'>
+            <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
+            <Link to="/rum" className='drink-link-head'>Rum | </Link>
+            <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
+            <Link to="/gin" className='drink-link-head'>Gin | </Link>
+            <Link to="/tequila" className='drink-link-head'>Tequila </Link>
+            </div>
+          </div>
+        </h1>
+      </div>  
+  </div>
+    )
 }
     export default Mainpage;

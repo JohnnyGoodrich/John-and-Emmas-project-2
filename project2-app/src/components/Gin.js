@@ -25,7 +25,7 @@ function Gin() {
       <div>
         <h1 className='header'>
           <div className='header-content'>
-            <a className='clink' href="/">Clink! &#127864;</a>
+            <a className='clink' href="/">Clink!</a>
             {/* <img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img> */}
             <div className='drink-head'>
               <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
@@ -57,23 +57,7 @@ function Gin() {
             )
           })}
         </div>
-        <div className='btns'>
-          <Link to="/vodka">
-            <button>Vodka</button>
-          </Link>
-          <Link to="/rum">
-            <button id="Rum">Rum</button>
-          </Link>
-          <Link to="/whiskey">
-            <button id="Whiskey">Whiskey</button>
-          </Link>
-          <Link to="/gin">
-            <button id="Gin">Gin</button>
-          </Link>
-          <Link to="/">
-            <button id="home">Home</button>
-          </Link>
-        </div>
+        
       </div>
     
   
