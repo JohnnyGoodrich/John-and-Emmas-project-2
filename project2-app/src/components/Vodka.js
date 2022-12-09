@@ -22,7 +22,7 @@ function Drinks(){
   }else{
 
 return(
-  <html>
+  <div>
               <h1 className='header'>
         <div className='header-content'>
           <a className='clink' href="/">Clink! &#127864;</a>
@@ -56,6 +56,6 @@ return(
 })
 }
 </div>
-</html>
+</div>
 )}}
 export default Drinks
