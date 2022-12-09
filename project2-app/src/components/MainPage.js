@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 
 
 function Mainpage(props) {
-    return(<div className="div1">
+    return(
+      <div className="div1">
    <div className="div2">
-    {/* <h1>Clink</h1> */}
     </div>
-    
+      <div className="title-container">
+        <div className="title-page-img">Clink!</div>
+        </div>
     <div className="buttons">
       <div className="div3">
         <Link to="/vodka">
