@@ -4,7 +4,7 @@ import {useParams} from 'react-router'
 
 function Whiskey(){
 
-  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=bourbon`
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Bourbon`
   const url2=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=scotch`
   const [drink, setDrink]=useState(null)
   const [drink2, setDrink2]=useState(null)
