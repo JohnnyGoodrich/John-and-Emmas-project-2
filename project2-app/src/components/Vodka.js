@@ -70,12 +70,9 @@ return(
       <Link to="/">
         <button id="home">Home</button>
       </Link>
-    </div></>
+    </div>
 
-  )
-})
-}
 </div>
-</div>
+
 )}}
 export default Drinks

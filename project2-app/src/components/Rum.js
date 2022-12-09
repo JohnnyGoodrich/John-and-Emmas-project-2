@@ -23,7 +23,7 @@ function Rum(){
 
 return(
   
-  <><div className="container">
+  <div className="container">
     <h1>Rum Drinks:</h1>
   <div>
               <h1 className='header'>
@@ -75,11 +75,8 @@ return(
       <Link to="/">
         <button id="home">Home</button>
       </Link>
-    </div></>
+    </div>
 
-  )
-})
-}
 </div>
 </div>
 )}}
