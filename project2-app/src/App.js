@@ -8,14 +8,14 @@ import DrinkDetails from './components/DrinkDetails';
 import Gin from './components/Gin';
 import Whiskey from './components/Whiskey';
 import Rum from './components/Rum';
+import Tequila from './components/Tequila';
+import { Link } from 'react-router-dom';
 
 function App() {
     return(
       
       <main>
-        <header className='header'>
-          <a href="/">Clink!<img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="90"></img></a>
-      </header>
+   
         <Routes>
           <Route path="/" element={ <Mainpage /> } />
           <Route path="/test" element={ <Mainpage /> } />
@@ -23,6 +23,7 @@ function App() {
           <Route path="/gin" element={ <Gin /> } />
           <Route path="/whiskey" element={ <Whiskey /> } />
           <Route path="/rum" element={ <Rum /> } />
+          <Route path="/tequila" element={ <Tequila /> } />
           <Route path="/drinks/:id" element={ <DrinkDetails /> } />
         </Routes>
       </main>    

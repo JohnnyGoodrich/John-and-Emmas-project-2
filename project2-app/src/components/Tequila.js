@@ -2,16 +2,16 @@ import {useState, useEffect} from "react"
 import { Link } from 'react-router-dom'
 import {useParams} from 'react-router'
 
-function Rum(){
+function Tequila(){
 
-  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum`
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila`
   const [drink, setDrink]=useState(null)
   useEffect( ()=> {
       fetch(url)
           .then((response)=>response.json())
           .then((json)=> {
               setDrink(json)
-            //   console.log(drink.drinks)
+              // console.log(drink.drinks)
       })
           .catch(console.error)
 
@@ -22,7 +22,7 @@ function Rum(){
   }else{
 
 return(
-  <div>
+<div>
               <h1 className='header'>
         <div className='header-content'>
           <a className='clink' href="/">Clink! &#127864;</a>
@@ -36,13 +36,14 @@ return(
           </div>
         </div>
         </h1>
- 
+  
 <div className="container">
-<h1>Rum Drinks:</h1>
+  
+<h1>Tequila Drinks:</h1>
 
 {drink.drinks.map((drinky, index)=>{
   return(
-    <Link to={`/drinks/${drinky.idDrink}`}key={index}>
+    <Link to={`/drinks/${drinky.idDrink}`} key={index}>
       <div className="drinks" key={index}>
         <div className="drinkName">
           <h3>{drinky.strDrink}</h3>
@@ -59,4 +60,4 @@ return(
 </div>
 </div>
 )}}
-export default Rum
+export default Tequila

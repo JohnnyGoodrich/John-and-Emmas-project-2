@@ -1,3 +1,27 @@
+
+html{
+  background-color: lightcyan;
+}
+.title-container{
+  text-align: center;
+  padding-top: 75px;
+  display: flex;
+  padding-left:0px;
+  justify-content: center;
+
+}
+.title-page-img{
+  text-align: center;
+  display: grid;
+  background-color:cadetblue;
+  color:pink;
+  border: 5px solid lightgray;
+  border-radius: 50rem;
+  padding:10px 80px 10px 30px;
+  font-family: 'Caveat', cursive;
+  font-size:150px;
+  margin:0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +36,10 @@ code {
     monospace;
 }
 .container {
+  background-color:lightcyan;
+  font-family: 'Caveat', cursive;
+  font-size: x-large;
+  color: navy;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: minmax(10px, 50px);
@@ -23,6 +51,7 @@ code {
 }
 
 .drinks{
+  background-color: aliceblue;
   border: 1px solid lightgray;
   border-radius: 1rem;
   display: grid;
@@ -41,61 +70,82 @@ code {
   text-align: center;
 }
 .details-container{
+ 
   text-align: center;
+  background-color:lightcyan;
   /* background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g"); */
   background-size:100% 100vh;
   margin:0px;
   background-repeat: no-repeat;
   height:100vh;
-  /* color: white; */
-  /* display: flex; */
+
 }
 .ingredients{
+  background-color: aliceblue;
+  /* font-weight: bold; */
   text-align: center;
   padding: 0;
   border: 1px solid lightgray;
   border-radius: 1rem;
 }
-.ingredientsHead{
-  /* padding-top: 100px; */
+.ingredientsHead {
+  font-family: 'Roboto Slab', serif;
+  font-size: large;
   text-align: center;
 }
 .drink-ing {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-column-gap: 4em;
+  grid-column-gap: 5%;
  
 }
 .drink-title-pic{
-  padding-left: 100px;
+  font-family: 'Lobster', cursive;
+  color: navy;
+  font-size: larger;
+  padding-left: 30%;
   padding-top: 40px;
   /* font-family: 'Caveat', cursive; */
   
 }
 .ingredgients-body{
-  padding-top: 50px;
-  padding-right: 100px;
+  padding-top: 100px;
+  padding-right: 20%;
   
 
 }
 .instructions{
-  /* display:flex; */
+  background-color: aliceblue;
+  display:flex;
   text-align: center;
-  padding-top: 10px;
-  /* width: 600px; */
+  flex-direction: column;
+  text-align: center;
+  position:relative;
   border: 1px solid lightgray;
   border-radius: 1rem;
-  
+}
+.text{
+  padding:0 20px 0 20px;
+}
+.instructions-body{
+  /* display: flex;
+  justify-content: center; */
+  padding-top: 50px;
+  padding-left:12%;
+  padding-right:70px;
 }
 .header{
-  display: flex;
-  align-items: center;
+
   background-color: lightblue;
   color: white;
   font-family: 'Caveat', cursive;
   font-size: xxx-large;
   padding-left: 50px;
   margin:0;
+}
+.header-content{
+  display: flex;
+  justify-content: space-between;
 }
 .header-image{
   padding-left: 50px;
@@ -104,4 +154,96 @@ code {
 }
 .btns{
   padding-top: 50px;
+}
+.above-all{
+  display: ;
+}
+.all {
+  display: grid;
+  max-width: 1000px;
+  margin:0 auto;
+}
+a {
+  text-decoration: none;
+  color: navy;
+}
+.clink{
+
+}
+.drink-head{
+  font-size: x-large;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 25px; 
+  margin:o;
+}
+.drink-link-head{
+  margin-bottom: 10px;
+  color: navy;
+}
+@media screen and (max-width:850px){
+  .all{
+  display:contents ;
+  width: 300px;
+}
+}
+@media screen and (max-width:850px){
+  .details-container{
+    margin:0 auto;
+    height: 120vh;
+    min-width: none;
+    text-align: center;
+  }
+
+  .header {
+    padding-left: 5px;
+  }
+  .clink{
+    font-size: xx-large;
+    
+  }
+  .drink-link-head{
+    font-size: large;
+  }
+  .details-image{
+    
+    height: 200px;
+    
+  }
+  .drink-title-pic{
+ 
+    text-align: center;
+    padding-left:0px;
+    width: 300px;
+  }
+  .ingredients{
+    
+    width: 300px;
+  }
+  .all{
+    margin:0 auto;
+    display:contents ;
+    width: 300px;
+  }
+  .drink-ing{
+    margin:0 auto;
+    padding-left: 30px;
+    display: block;
+    width:300px;
+ 
+  }
+  .ingredgients-body{
+    margin:0 auto;
+    padding: 0 0 0 0;
+    width: 300px;
+  }
+  .instructions-body{
+    margin:0 auto;
+    padding: 0 0 0 30px;
+    width: 300px;
+  }
+  .btns{
+    display: none;
+  }
+  
 }

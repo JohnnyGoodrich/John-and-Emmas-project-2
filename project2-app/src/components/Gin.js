@@ -22,8 +22,23 @@ function Gin(){
   }else{
 
 return(
+  <div>
+              <h1 className='header'>
+        <div className='header-content'>
+          <a className='clink' href="/">Clink! &#127864;</a>
+          {/* <img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img> */}
+          <div className='drink-head'>
+          <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
+          <Link to="/rum" className='drink-link-head'>Rum | </Link>
+          <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
+          <Link to="/gin" className='drink-link-head'>Gin | </Link>
+          <Link to="/tequila" className='drink-link-head'>Tequila </Link>
+          </div>
+        </div>
+        </h1>
   
 <div className="container">
+  
 <h1>Gin Drinks:</h1>
 
 {drink.drinks.map((drinky, index)=>{
@@ -42,6 +57,7 @@ return(
   )
 })
 }
+</div>
 </div>
 )}}
 export default Gin
