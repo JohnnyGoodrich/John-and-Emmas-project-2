@@ -2,9 +2,9 @@ import {useState, useEffect} from "react"
 import { Link } from 'react-router-dom'
 import {useParams} from 'react-router'
 
-function Drinks(){
+function Tequila(){
 
-  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka`
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila`
   const [drink, setDrink]=useState(null)
   useEffect( ()=> {
       fetch(url)
@@ -22,7 +22,7 @@ function Drinks(){
   }else{
 
 return(
-  <div>
+<div>
               <h1 className='header'>
         <div className='header-content'>
           <a className='clink' href="/">Clink! &#127864;</a>
@@ -36,41 +36,23 @@ return(
           </div>
         </div>
         </h1>
+  
 <div className="container">
-<h1>Vodka Drinks:</h1>
+  
+<h1>Tequila Drinks:</h1>
 
-    {drink.drinks.map((drinky, index) => {
-      return (
-        <Link to={`/drinks/${drinky.idDrink}`} key={index}>
-          <div className="drinks" key={index}>
-            <div className="drinkName">
-              <h3>{drinky.strDrink}</h3>
-            </div>
-            <div className="img">
-              <img src={drinky.strDrinkThumb} height="100" />
-            </div>
-          </div>
-        </Link>
-
-      )
-    })}
-  </div><div className='btns'>
-      <Link to="/vodka">
-        <button>Vodka</button>
-      </Link>
-      <Link to="/rum">
-        <button id="Rum">Rum</button>
-      </Link>
-      <Link to="/whiskey">
-        <button id="Whiskey">Whiskey</button>
-      </Link>
-      <Link to="/gin">
-        <button id="Gin">Gin</button>
-      </Link>
-      <Link to="/">
-        <button id="home">Home</button>
-      </Link>
-    </div></>
+{drink.drinks.map((drinky, index)=>{
+  return(
+    <Link to={`/drinks/${drinky.idDrink}`} key={index}>
+      <div className="drinks" key={index}>
+        <div className="drinkName">
+          <h3>{drinky.strDrink}</h3>
+        </div>
+        <div className="img">
+          <img src={drinky.strDrinkThumb}height="100"/>
+        </div>
+      </div>
+    </Link>
 
   )
 })
@@ -78,4 +60,4 @@ return(
 </div>
 </div>
 )}}
-export default Drinks
+export default Tequila

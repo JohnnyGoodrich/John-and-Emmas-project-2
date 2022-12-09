@@ -9,6 +9,15 @@ function Mainpage(props) {
 
 
    <div className="button">
+    return(
+      <div className="div1">
+   <div className="div2">
+    </div>
+      <div className="title-container">
+        <div className="title-page-img">Clink!</div>
+        </div>
+    <div className="buttons">
+      <div className="div3">
         <Link to="/vodka">
           <button>Vodka</button>
         </Link>
@@ -29,5 +38,13 @@ function Mainpage(props) {
 </div>
     
     
+        <div className="div6">
+        <Link to="/tequila">
+          <button>Tequila</button>
+        </Link>
+        </div>
+</div>
+    </div>
+    )
 }
 export default Mainpage;

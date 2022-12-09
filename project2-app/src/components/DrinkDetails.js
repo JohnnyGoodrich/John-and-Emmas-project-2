@@ -21,15 +21,31 @@ function DrinkDetails(){
     }, [])
     return (
         drinksD ?
+        
         <div className="details-container">
+               <h1 className='header'>
+        <div className='header-content'>
+          <a className='clink' href="/">Clink! &#127864;</a>
+          {/* <img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img> */}
+          <div className='drink-head'>
+          <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
+          <Link to="/rum" className='drink-link-head'>Rum | </Link>
+          <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
+          <Link to="/gin" className='drink-link-head'>Gin | </Link>
+          <Link to="/tequila" className='drink-link-head'>Tequila </Link>
+          </div>
+        </div>
+        </h1>
+        <div className='above-all'>
+            <div className='all'>
             <section className='drink-ing'>
                 <div className='drink-title-pic'>
                     <h2>{drinksD.drinks[0].strDrink}</h2>
-                    <img src={drinksD.drinks[0].strDrinkThumb}height="300"/>
+                    <img className='details-image' src={drinksD.drinks[0].strDrinkThumb}height="270"/>
                 </div>
                 <div className='ingredgients-body'>
-                    <h3 className='ingredientsHead'>Ingredients:</h3>
                     <ul className='ingredients'>
+                    <h3 className='ingredientsHead'>Ingredients:</h3>
                         <p>{drinksD.drinks[0].strMeasure1}  {drinksD.drinks[0].strIngredient1}</p>  
                         <p>{drinksD.drinks[0].strMeasure2} {drinksD.drinks[0].strIngredient2}</p>  
                         <p>{drinksD.drinks[0].strMeasure3} {drinksD.drinks[0].strIngredient3}</p>  
@@ -43,32 +59,15 @@ function DrinkDetails(){
                     </ul>
                 </div>
             </section>
-            <div className='instructions'>    
+            <div className='instructions-body'>    
+                <div className='instructions'>
                 <h3>How to make a {drinksD.drinks[0].strDrink}:</h3>
                 <p className='text'>{drinksD.drinks[0].strInstructions}</p>
+                </div>
             </div>    
-            <div className='btns'>
-                <Link to="/vodka">
-                <button>Vodka</button>
-                </Link>
-                <Link to="/rum">
-                <button id="Rum">Rum</button>
-                </Link>
-                <Link to="/whiskey">
-                <button id="Whiskey">Whiskey</button>
-                </Link>
-                <Link to="/gin">
-                <button id="Gin">Gin</button>
-                </Link>
-                <Link to="/">
-                <button id="home">Home</button>
-                </Link>
-      </div>
-
-           
-
-     
-          
+            </div>
+  
+        </div>
         </div> :<p>Loading...</p>
       );
       
