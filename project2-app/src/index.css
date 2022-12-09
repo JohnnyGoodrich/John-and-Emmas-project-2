@@ -4,8 +4,9 @@ html{
 }
 .title-container{
   text-align: center;
-  padding-top: 100px;
+  padding-top: 75px;
   display: flex;
+  padding-left:0px;
   justify-content: center;
 
 }
@@ -69,6 +70,7 @@ code {
   text-align: center;
 }
 .details-container{
+ 
   text-align: center;
   background-color:lightcyan;
   /* background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g"); */
@@ -76,9 +78,7 @@ code {
   margin:0px;
   background-repeat: no-repeat;
   height:100vh;
-  /* min-width: 840px; */
-  /* color: white; */
-  /* display: flex; */
+
 }
 .ingredients{
   background-color: aliceblue;
@@ -116,16 +116,23 @@ code {
 }
 .instructions{
   background-color: aliceblue;
-  display:grid;
+  display:flex;
+  text-align: center;
+  flex-direction: column;
   text-align: center;
   position:relative;
   /* width: 600px; */
   border: 1px solid lightgray;
   border-radius: 1rem;
   /* padding-right:2rem; */
+  
 }
 .instructions-body{
-  padding: 50px 7% 0 12%;
+  /* display: flex;
+  justify-content: center; */
+  padding-top: 50px;
+  padding-left:12%;
+  padding-right:70px;
 }
 .header{
 
@@ -148,9 +155,13 @@ code {
 .btns{
   padding-top: 50px;
 }
+.above-all{
+  display: ;
+}
 .all {
   display: grid;
-
+  max-width: 1000px;
+  margin:0 auto;
 }
 a {
   text-decoration: none;
@@ -167,18 +178,20 @@ a {
   margin-bottom: 10px;
   color: navy;
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:850px){
+  .all{
+  display:contents ;
+  width: 300px;
+}
+}
+@media screen and (max-width:850px){
   .details-container{
-
+    margin:0 auto;
     height: 120vh;
     min-width: none;
-
     text-align: center;
   }
-  html{
-    width: 375px;
-    max-height: 700px;
-  }
+
   .header {
     padding-left: 5px;
   }
@@ -189,34 +202,39 @@ a {
     font-size: large;
   }
   .details-image{
+    
     height: 200px;
     
   }
   .drink-title-pic{
+ 
     text-align: center;
     padding-left:0px;
     width: 300px;
   }
   .ingredients{
+    
     width: 300px;
   }
   .all{
-    
+    margin:0 auto;
     display:contents ;
     width: 300px;
   }
   .drink-ing{
+    margin:0 auto;
     padding-left: 30px;
     display: block;
     width:300px;
-    margin: 0;
+ 
   }
   .ingredgients-body{
+    margin:0 auto;
     padding: 0 0 0 0;
     width: 300px;
   }
   .instructions-body{
-   
+    margin:0 auto;
     padding: 0 0 0 30px;
     width: 300px;
   }

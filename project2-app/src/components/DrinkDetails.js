@@ -35,6 +35,7 @@ function DrinkDetails(){
           </div>
         </div>
         </h1>
+        <div className='above-all'>
             <div className='all'>
             <section className='drink-ing'>
                 <div className='drink-title-pic'>
@@ -64,23 +65,8 @@ function DrinkDetails(){
                 </div>
             </div>    
             </div>
-            <div className='btns'>
-                <Link to="/vodka">
-                <button>Vodka</button>
-                </Link>
-                <Link to="/rum">
-                <button id="Rum">Rum</button>
-                </Link>
-                <Link to="/whiskey">
-                <button id="Whiskey">Whiskey</button>
-                </Link>
-                <Link to="/gin">
-                <button id="Gin">Gin</button>
-                </Link>
-                <Link to="/">
-                <button id="home">Home</button>
-                </Link>
-      </div>
+  
+        </div>
         </div> :<p>Loading...</p>
       );
       
