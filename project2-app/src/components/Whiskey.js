@@ -4,7 +4,7 @@ import {useParams} from 'react-router'
 
 function Whiskey(){
 
-  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=bourbon`
+  const url=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Bourbon`
   const url2=`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=scotch`
   const [drink, setDrink]=useState(null)
   const [drink2, setDrink2]=useState(null)
@@ -37,7 +37,7 @@ return(
   <div>
       <h1 className='header'>
         <div className='header-content'>
-          <a className='clink' href="/">Clink! &#127864;</a>
+          <a className='clink' href="/">Clink!</a>
           {/* <img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img> */}
           <div className='drink-head'>
           <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
