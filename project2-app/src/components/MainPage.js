@@ -1,3 +1,4 @@
+import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
 
@@ -28,6 +29,7 @@ function Mainpage(props) {
             </div>
           </div>
         </h1>
+            {/* <Slider/> */}
       </div>  
   </div>
     )
