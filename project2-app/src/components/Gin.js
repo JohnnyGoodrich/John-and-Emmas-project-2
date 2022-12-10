@@ -48,7 +48,7 @@ function Gin() {
                   <div className="drinkName">
                     <h3>{drinky.strDrink}</h3>
                   </div>
-                  <div className="img">
+                  <div className="img2">
                     <img src={drinky.strDrinkThumb} height="100" />
                   </div>
                 </div>

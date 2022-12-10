@@ -41,7 +41,7 @@ code {
     monospace;
 }
 .container {
-  background-color:;
+ 
   font-family: 'Caveat', cursive;
   font-size: x-large;
   color: cadetblue;
@@ -62,7 +62,7 @@ code {
   display: grid;
   /* grid-template-rows: 2fr 1fr; */
 }
-.img {
+.img2 {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -166,7 +166,7 @@ code {
 }
 .mp-header-content{
   text-align: center;
-  padding-top:;
+
 
 }
 .header-content{
@@ -182,7 +182,7 @@ code {
   padding-top: 50px;
 }
 .above-all{
-  display: ;
+
 }
 .all {
   display: grid;

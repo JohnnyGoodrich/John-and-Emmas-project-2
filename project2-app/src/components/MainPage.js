@@ -5,13 +5,13 @@ import Slider from "./Slider";
 
 function Mainpage(props) {
   return  (
-  <div className="mainpage">
-   
+    <div className="mainpage">
+    {/* <Slider/> */}
     <div className="button">
       <div className="div1">
         <div className="div2">
         </div>
-        {/* <Slider /> */}
+        
     </div>
         <div className="title-container">
           <div className="title-page-img">Clink!</div>
@@ -29,7 +29,7 @@ function Mainpage(props) {
             </div>
           </div>
         </h1>
-            {/* <Slider/> */}
+           
       </div>  
   </div>
     )
