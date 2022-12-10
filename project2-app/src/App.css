@@ -1,8 +1,4 @@
-
 /* @import "bootstrap/dist/css/bootstrap.min.css"; */
-
-
-
 
 .parent {
   display: grid;
@@ -27,7 +23,7 @@
   */
   
  .rum {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 15px 32px;

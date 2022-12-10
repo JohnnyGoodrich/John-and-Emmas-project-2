@@ -1,4 +1,4 @@
-
+/* @import "bootstrap/dist/css/bootstrap.min.css"; */
 html{
   background-color: lightcyan;
 
@@ -41,7 +41,7 @@ code {
     monospace;
 }
 .container {
-  background-color:;
+
   font-family: 'Caveat', cursive;
   font-size: x-large;
   color: cadetblue;
@@ -60,7 +60,7 @@ code {
   border: 1px solid lightgray;
   border-radius: 1rem;
   display: grid;
-  /* grid-template-rows: 2fr 1fr; */
+  grid-template-rows: 1.25fr 1fr;
 }
 .img {
   align-items: center;
@@ -68,18 +68,13 @@ code {
   justify-content: center;
 }
 .drinkName{
-
-  /* border-radius: 0 0 1rem 1rem; */
-  margin: 0;
-  /* padding: 1rem; */
-  text-align: center;
+text-align: center
 }
 .details-container{
  
   text-align: center;
   background-color:lightcyan;
-  /* background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g"); */
-  background-size:100% 100vh;
+  background-size:100%  100vh;
   margin:0px;
   background-repeat: no-repeat;
   height:100vh;
@@ -87,8 +82,7 @@ code {
 }
 .ingredients{
   background-color: aliceblue;
-  /* font-weight: bold; */
-  text-align: center;
+  text-align:center;
   padding: 0;
   border: 1px solid lightgray;
   border-radius: 1rem;
@@ -110,7 +104,7 @@ code {
   font-size: larger;
   padding-left: 30%;
   padding-top: 40px;
-  /* font-family: 'Caveat', cursive; */
+
   
 }
 .ingredgients-body{
@@ -125,17 +119,14 @@ code {
   text-align: center;
   flex-direction: column;
   text-align: center;
-  position:relative;
-  border: 1px solid lightgray;
+  border:1px solid lightgray;
   border-radius: 1rem;
 }
 .text{
   padding:0 20px 0 20px;
 }
 .instructions-body{
-  /* display: flex;
-  justify-content: center; */
-  padding-top: 50px;
+  padding-top:50px;
   padding-left:12%;
   padding-right:70px;
 }
@@ -152,8 +143,8 @@ code {
   padding-top: 50vh;
   padding-left: 250px;
   padding-right: 250px;
-  /* display: flex; */
-  
+
+
 }
 .mp-header{
   padding: 0px;
@@ -165,9 +156,7 @@ code {
   margin: 0 auto;
 }
 .mp-header-content{
-  text-align: center;
-  padding-top:;
-
+  text-align:center;
 }
 .header-content{
   display: flex;
@@ -181,9 +170,7 @@ code {
 .btns{
   padding-top: 50px;
 }
-.above-all{
-  display: ;
-}
+
 .all {
   display: grid;
   max-width: 1000px;
