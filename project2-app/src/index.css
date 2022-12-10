@@ -60,7 +60,7 @@ code {
   border: 1px solid lightgray;
   border-radius: 1rem;
   display: grid;
-  /* grid-template-rows: 2fr 1fr; */
+  grid-template-rows: 1.25fr 1fr;
 }
 .img2 {
   align-items: center;
