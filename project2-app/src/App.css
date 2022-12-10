@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* @import "bootstrap/dist/css/bootstrap.min.css"; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /*
+  .div1 { 
+    grid-area: 1 / 1 / 6 / 7; 
+    background-color: black;
+    background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    border:0px;
+    margin:0px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  */
+  
+ .rum {
+  background-color: #4CAF50; /* Green */
+  border: none;
   color: white;
-}
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 
-.App-link {
-  color: #61dafb;
-}
+ }
+  
+ 
+ .button {
+    margin: 0 auto;
+    padding-left: 275px;
+    padding-right: 275px;
+    max-width: 400px;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
