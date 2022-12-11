@@ -11,7 +11,6 @@ function Gin() {
       .then((response) => response.json())
       .then((json) => {
         setDrink(json)
-        // console.log(drink.drinks)
       })
       .catch(console.error)
 
@@ -22,48 +21,38 @@ function Gin() {
   } else {
 
     return (
-      <div>
+      <div className="drink-container">
         <h1 className='header'>
           <div className='header-content'>
-            <a className='clink' href="/">Clink!</a>
-            {/* <img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img> */}
+            <a className="text-decoration-none" href="/">Clink!</a>
             <div className='drink-head'>
-              <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
-              <Link to="/rum" className='drink-link-head'>Rum | </Link>
-              <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
-              <Link to="/gin" className='drink-link-head'>Gin | </Link>
-              <Link to="/tequila" className='drink-link-head'>Tequila </Link>
+              <Link to="/vodka" className="text-decoration-none" >Vodka | </Link>
+              <Link to="/rum" className="text-decoration-none" >Rum | </Link>
+              <Link to="/whiskey" className="text-decoration-none" >Whiskey | </Link>
+              <Link to="/gin" className="text-decoration-none" >Gin | </Link>
+              <Link to="/tequila" className="text-decoration-none" >Tequila </Link>
             </div>
           </div>
         </h1>
 
         <div className="container">
-
-          <h1>Gin Drinks:</h1>
-
+          <h1 className="drink-title">Gin Drinks:</h1>
           {drink.drinks.map((drinky, index) => {
             return (
-              <Link to={`/drinks/${drinky.idDrink}`} key={index}>
+              <Link id="drink-page-text" className="text-decoration-none" to={`/drinks/${drinky.idDrink}`} key={index}>
                 <div className="drinks" key={index}>
                   <div className="drinkName">
                     <h3>{drinky.strDrink}</h3>
                   </div>
-                  <div className="img">
+                  <div className="img2">
                     <img src={drinky.strDrinkThumb} height="100" />
                   </div>
                 </div>
               </Link>
-
             )
           })}
         </div>
-        
       </div>
-    
-  
-
-
-
     )
   }
 }
