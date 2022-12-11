@@ -25,14 +25,14 @@ function DrinkDetails(){
         <div className="details-container">
                <h1 className='header'>
         <div className='header-content'>
-          <a className='clink' href="/">Clink!</a>
+          <a class="text-decoration-none" href="/">Clink!</a>
           {/* <img className='header-image' src='https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F421571%2Fscreenshots%2F10888517%2Fglasses_4x.jpg'height="80"></img> */}
           <div className='drink-head'>
-          <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
-          <Link to="/rum" className='drink-link-head'>Rum | </Link>
-          <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
-          <Link to="/gin" className='drink-link-head'>Gin | </Link>
-          <Link to="/tequila" className='drink-link-head'>Tequila </Link>
+          <Link to="/vodka" class="text-decoration-none">Vodka | </Link>
+          <Link to="/rum" class="text-decoration-none">Rum | </Link>
+          <Link to="/whiskey" class="text-decoration-none">Whiskey | </Link>
+          <Link to="/gin" class="text-decoration-none">Gin | </Link>
+          <Link to="/tequila" class="text-decoration-none">Tequila </Link>
           </div>
         </div>
         </h1>
@@ -61,7 +61,7 @@ function DrinkDetails(){
             </section>
             <div className='instructions-body'>    
                 <div className='instructions'>
-                <h3>How to make a {drinksD.drinks[0].strDrink}:</h3>
+                <h3 className='how-to'>How to make a {drinksD.drinks[0].strDrink}:</h3>
                 <p className='text'>{drinksD.drinks[0].strInstructions}</p>
                 </div>
             </div>    
