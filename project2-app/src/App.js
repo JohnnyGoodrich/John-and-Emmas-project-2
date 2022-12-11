@@ -21,7 +21,7 @@ function App() {
       <main>
    
         <Routes>
-          <Route path="/" element={ <Mainpage /> } />
+          <Route path="/" element={ <Mainpage />} />
           <Route path="/test" element={ <Mainpage /> } />
           <Route path="/vodka" element={ <Drinks /> } />
           <Route path="/gin" element={ <Gin /> } />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/rum" element={ <Rum /> } />
           <Route path="/tequila" element={ <Tequila /> } />
           <Route path="/drinks/:id" element={ <DrinkDetails /> } />
-          <Route path="/Slider" element={ <Slider /> } />
+          <Route path="/slider" element={ <Slider /> } />
         </Routes>
       </main>    
     )

@@ -5,31 +5,26 @@ import Slider from "./Slider";
 
 function Mainpage(props) {
   return  (
-  <div className="mainpage">
-   
-    <div className="button">
-      <div className="div1">
-        <div className="div2">
-        </div>
-        {/* <Slider /> */}
-    </div>
+    <div className="mainpage">
         <div className="title-container">
           <div className="title-page-img">Clink!</div>
         </div>
+  <div className="slider">
+      <Slider/>
   </div>
       <div className="mp-header-container">
         <h1 className='mp-header'>
           <div className='mp-header-content'>
-            <div className='mp-drink-head'>
-            <Link to="/vodka" className='drink-link-head'>Vodka | </Link>
-            <Link to="/rum" className='drink-link-head'>Rum | </Link>
-            <Link to="/whiskey" className='drink-link-head'>Whiskey | </Link>
-            <Link to="/gin" className='drink-link-head'>Gin | </Link>
-            <Link to="/tequila" className='drink-link-head'>Tequila </Link>
+            <div className="text-decoration-none">
+            <Link to="/vodka" className="text-decoration-none">Vodka | </Link>
+            <Link to="/rum" className="text-decoration-none">Rum | </Link>
+            <Link to="/whiskey" className="text-decoration-none">Whiskey | </Link>
+            <Link to="/gin" className="text-decoration-none">Gin | </Link>
+            <Link to="/tequila" className="text-decoration-none">Tequila </Link>
             </div>
           </div>
         </h1>
-            {/* <Slider/> */}
+           
       </div>  
   </div>
     )

@@ -1,7 +1,12 @@
-/* @import "bootstrap/dist/css/bootstrap.min.css"; */
 html{
   background-color: lightcyan;
 
+}
+#drink-page-text{
+  color:cadetblue;
+}
+.drink-title{
+  font-size: 40px;
 }
 .mainpage{
   background-image: url("https://media1.giphy.com/media/QX7JDMmfY5Pz3REnim/giphy.gif?cid=790b7611782e82d7417e159202ed08e2b2b9eecfab8c7104&rid=giphy.gif&ct=g");
@@ -12,17 +17,23 @@ html{
 }
 .title-container{
   text-align: center;
-  padding-top: 75px;
+  padding: 50px 250px 50px 250px;
+  max-width: 900px;
+  margin: 0 auto;
 
+}
+.drink-container{
+  background-color: lightcyan;
 }
 .title-page-img{
   text-align: center;
-  display: grid;
+  display: flex;
+  justify-content: center;
   background-color:cadetblue;
   color:pink;
   border: 5px solid lightgray;
   border-radius: 50rem;
-  padding:10px 80px 10px 30px;
+  padding:0 80px 0 30px;
   font-family: 'Caveat', cursive;
   font-size:150px;
   margin:0;
@@ -41,7 +52,6 @@ code {
     monospace;
 }
 .container {
-
   font-family: 'Caveat', cursive;
   font-size: x-large;
   color: cadetblue;
@@ -50,6 +60,8 @@ code {
   grid-auto-rows: minmax(10px, 50px);
   grid-gap: 1rem;
   margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
   max-width: 1200px;
   padding: 1rem;
   grid-auto-rows: auto;
@@ -60,13 +72,20 @@ code {
   border: 1px solid lightgray;
   border-radius: 1rem;
   display: grid;
-  grid-template-rows: 1.25fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .img {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+
+.img2{
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+
 .drinkName{
 text-align: center
 }
@@ -89,6 +108,7 @@ text-align: center
 }
 .ingredientsHead {
   font-family: 'Roboto Slab', serif;
+  font-weight: bold;
   font-size: large;
   text-align: center;
 }
@@ -103,12 +123,14 @@ text-align: center
   color:cadetblue;
   font-size: larger;
   padding-left: 30%;
-  padding-top: 40px;
-
-  
+  padding-top: 75px;  
 }
-.ingredgients-body{
-  padding-top: 100px;
+.details-image{
+  padding-top: 10px;
+}
+
+.ingredients-body{
+  padding-top: 120px;
   padding-right: 20%;
   
 
@@ -140,14 +162,13 @@ text-align: center
   margin:0;
 }
 .mp-header-container{
-  padding-top: 50vh;
+  padding-top: 10vh;
   padding-left: 250px;
   padding-right: 250px;
-
-
 }
 .mp-header{
   padding: 0px;
+  font-size: 33px;
   background-color: cadetblue;
   font-family: 'Caveat', cursive;
   border: 1px solid lightgray;
@@ -186,21 +207,92 @@ a {
 .drink-head{
   font-size: x-large;
   display: flex;
-  align-items: flex-end;
+  padding-top: 15px;
+  align-items: center;
   padding-right: 25px; 
-  margin:o;
+
 }
 .drink-link-head{
   margin-bottom: 10px;
   color:pink;
 }
-@media screen and (max-width:850px){
-  .all{
-  display:contents ;
-  width: 300px;
+.how-to {
+font-size: 20px;
 }
+
+@media screen and (max-width:415px){
+  .container{
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+    color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: minmax(10px, 50px);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 1200px;
+    padding: 1rem;
+    grid-auto-rows: auto;
+    
+  }
+  .drinks{
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .drink-head{
+    font-size: 20px;
+    padding-right: 10px;
+    align-items: center;
+  }
+  .mp-header-container{
+
+    margin: 0 auto;
+    max-width: 320px;
+
+}
+  .mp-header{
+    font-size: 23px;
+
+    
+  }
+  .slider{
+    width:200px;
+    margin:0 auto;
+  }
+}
+
+@media screen and (max-width:880px){
+  .title-page-img{
+    width:300px;
+    margin: 0 auto;
+    padding-right: 50px;
+    font-size:100px;
+}
+  .title-container{
+    padding: 50px 20px 50px 20px;
+}
+  .mp-header-container{
+    padding-top: 10vh;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    width: 450px;
+}
+.details-image{
+    padding-top: 10px;
+}
+
+
 }
 @media screen and (max-width:850px){
+  .how-to{
+    font-size: 18px;
+  }
   .details-container{
     margin:0 auto;
     height: 120vh;
@@ -230,7 +322,6 @@ a {
     width: 300px;
   }
   .ingredients{
-    
     width: 300px;
   }
   .all{
@@ -240,19 +331,19 @@ a {
   }
   .drink-ing{
     margin:0 auto;
-    padding-left: 30px;
+    padding-left: 0px;
     display: block;
     width:300px;
  
   }
   .ingredgients-body{
     margin:0 auto;
-    padding: 0 0 0 0;
+    padding-top: 30px;
     width: 300px;
   }
   .instructions-body{
     margin:0 auto;
-    padding: 0 0 0 30px;
+    padding: 0px;
     width: 300px;
   }
   .btns{
