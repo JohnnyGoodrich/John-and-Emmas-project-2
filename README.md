@@ -9,4 +9,6 @@ An app that allows the user to look up the recipes for different cocktails based
 For our 2nd project, we want to be able to find a drink recipe based on what I'm in the mood for. The app will allow the user to select an ingredient and then show them different cocktail recipes depending on what they choose.
 # API Link:
 https://www.thecocktaildb.com/api.php
+# Technologies used:
+-HTML, JS, CSS, React, Bootstrap, google fonts, CocktailDB API, Flexbox, Grid
 # Component Hierarchy
