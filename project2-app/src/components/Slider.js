@@ -31,7 +31,7 @@ function Slider() {
           alt="drink"/>
           <Carousel.Caption>
           <h3 key={imageIndex}>{drinks.drinks[imageIndex].strDrink}</h3>
-          <p key={imageIndex}>{drinks.drinks[imageIndex].strCategory}</p>
+          <p key={imageIndex}>{drinks.drinks[imageIndex].strIngredient1}</p>
         </Carousel.Caption>
         </Carousel.Item>
         )
