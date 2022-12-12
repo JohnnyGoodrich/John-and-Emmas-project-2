@@ -10,5 +10,13 @@ For our 2nd project, we want to be able to find a drink recipe based on what I'm
 # API Link:
 https://www.thecocktaildb.com/api.php
 # Technologies used:
+# Project screenshots
+first page
 -HTML, JS, CSS, React, Bootstrap, google fonts, CocktailDB API, Flexbox, Grid
-# Component Hierarchy
+# Main Page
+![image](https://user-images.githubusercontent.com/116520614/207068153-8fc39190-cab6-4bb6-85f5-f92c0dcc3f76.png)
+# Drink page by ingredident:
+![image](https://user-images.githubusercontent.com/116520614/207068856-6b6a9cf4-bcbf-4fd3-b5cf-0005f9f4d02b.png)
+# Drink Details page:
+![image](https://user-images.githubusercontent.com/116520614/207069169-872f3860-5ca1-4d8b-99c0-2e64ba112d20.png)
+
