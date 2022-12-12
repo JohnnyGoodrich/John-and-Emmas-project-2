@@ -12,7 +12,7 @@ function Gin() {
       .then((json) => {
         setDrink(json)
       })
-      .catch(console.error)
+    
 
   }, [])
   if (drink === null) {

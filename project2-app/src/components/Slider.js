@@ -19,12 +19,12 @@ function Slider() {
     const [index, setIndex] = useState(0)
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
-        console.log(index)
+    
     };
     if (!drinks) {
         return (<h1></h1>)
     }else{
-       console.log(drinks.drinks)
+      
         const eachDrink = drinks.drinks.map((drink, imageIndex) => 
         <Carousel.Item key={imageIndex}>
         <img key={imageIndex}
