@@ -1,4 +1,6 @@
 # John-and-Emmas-project-2
+Site Link:https://drink-clink.netlify.app/
+
 Developers: John Goodrich and Emma Blaido
 # Description
 An app that allows the user to look up the recipes for different cocktails based on what type of liquor they are in the mood for.
